@@ -1,3 +1,4 @@
+import hashlib
 import os
 import re
 import shutil
@@ -19,10 +20,126 @@ REPOS = [
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUTPUT_DIR = Path(".")
+INDEX_FILE = OUTPUT_DIR / "index.txt"
+
+# RAW 網址設定（若這批 zip 會放進某個 Repo 的子資料夾，請填例如 "releases/fwlib"，否則留空 ""）
+RAW_SUBPATH = ""
+GITHUB_REPO = "HT32_STD_FWLib_Release"
+GITEE_REPO = "HT32_STD_FWLib_Release"
+GITHUB_BRANCH = "main"
+GITEE_BRANCH = "master"
+
+GITHUB_RAW_BASE = f"https://raw.githubusercontent.com/{OWNER}/{GITHUB_REPO}/{GITHUB_BRANCH}"
+GITEE_RAW_BASE = f"https://gitee.com/{OWNER}/{GITEE_REPO}/raw/{GITEE_BRANCH}"
 
 
 def sanitize_name(name: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', "_", name).strip()
+
+
+def format_size(size_bytes: int) -> str:
+    if size_bytes < 1024:
+        return f"{size_bytes:,} B"
+    elif size_bytes < 1024 ** 2:
+        return f"{size_bytes / 1024:.2f} KB ({size_bytes:,} bytes)"
+    elif size_bytes < 1024 ** 3:
+        return f"{size_bytes / (1024 ** 2):.2f} MB ({size_bytes:,} bytes)"
+    else:
+        return f"{size_bytes / (1024 ** 3):.2f} GB ({size_bytes:,} bytes)"
+
+
+def calculate_sha256(file_path: Path) -> str:
+    h = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        while True:
+            chunk = f.read(1024 * 1024)
+            if not chunk:
+                break
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def build_raw_urls(filename: str) -> tuple[str, str]:
+    clean_sub = RAW_SUBPATH.strip("/")
+    rel_path = f"{clean_sub}/{filename}" if clean_sub else filename
+    gh_url = f"{GITHUB_RAW_BASE.rstrip('/')}/{rel_path}"
+    gitee_url = f"{GITEE_RAW_BASE.rstrip('/')}/{rel_path}"
+    return gh_url, gitee_url
+
+
+def extract_release_date_from_zip(zip_path: Path) -> str:
+    """從 zip 內部的 Release_Notes.txt 擷取 Release 日期。"""
+    try:
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            target_members = [
+                name for name in zf.namelist()
+                if not name.endswith("/") and Path(name).name.lower() == "release_notes.txt"
+            ]
+            if not target_members:
+                return "N/A (Release_Notes.txt not found)"
+
+            target_members.sort(key=lambda p: len(Path(p).parts))
+            raw_bytes = zf.read(target_members[0])
+
+            text = ""
+            for enc in ("utf-8-sig", "utf-8", "cp950", "big5", "latin-1"):
+                try:
+                    text = raw_bytes.decode(enc)
+                    break
+                except UnicodeDecodeError:
+                    continue
+
+            if not text:
+                return "N/A (decode failed)"
+
+            patterns = [
+                r"\b(20\d{2}[-/.](?:0?[1-9]|1[0-2])[-/.](?:0?[1-9]|[12]\d|3[01]))\b",
+                r"\b(20\d{2}\s*年\s*(?:0?[1-9]|1[0-2])\s*月\s*(?:0?[1-9]|[12]\d|3[01])\s*日?)\b",
+                r"\b((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2})\b",
+            ]
+
+            lines = text.splitlines()
+            for line in lines:
+                if re.search(r"(release\s*date|date|日期)", line, re.IGNORECASE):
+                    for pat in patterns:
+                        m = re.search(pat, line, re.IGNORECASE)
+                        if m:
+                            return m.group(1).strip()
+
+            for pat in patterns:
+                m = re.search(pat, text, re.IGNORECASE)
+                if m:
+                    return m.group(1).strip()
+
+            return "N/A (date not matched)"
+    except Exception as e:
+        return f"N/A ({e})"
+
+
+def generate_index_txt(target_dir: Path, index_path: Path):
+    """掃描 target_dir 下的 .zip 檔案並輸出 index.txt。"""
+    zip_files = sorted(
+        [p for p in target_dir.iterdir() if p.is_file() and p.suffix.lower() == ".zip"],
+        key=lambda p: p.name.lower(),
+    )
+
+    lines = []
+    for zf_path in zip_files:
+        size_bytes = zf_path.stat().st_size
+        sha256_val = calculate_sha256(zf_path)
+        gh_url, gitee_url = build_raw_urls(zf_path.name)
+        rel_date = extract_release_date_from_zip(zf_path)
+
+        lines.append(f"File: {zf_path.name}")
+        lines.append(f"  GitHub RAW : {gh_url}")
+        lines.append(f"  Gitee RAW  : {gitee_url}")
+        lines.append(f"  Size       : {format_size(size_bytes)}")
+        lines.append(f"  SHA256     : {sha256_val}")
+        lines.append(f"  ReleaseDate: {rel_date}")
+        lines.append("-" * 60)
+
+    index_path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+    print(f"\n已產生 {index_path.resolve()}（共 {len(zip_files)} 個檔案）")
 
 
 def api_get(url: str):
@@ -39,33 +156,30 @@ def api_get(url: str):
 
 
 def flatten_zip_top_dir(zip_path: Path):
-    """若 zip 內所有成員都在同一個頂層目錄下，移除該頂層目錄，使檔案直接位於 zip 根目錄。"""
+    """直接從 zip 串流移除單一頂層資料夾，使檔案直接位於 zip 根目錄。"""
     with tempfile.TemporaryDirectory() as tmp_str:
-        tmp_dir = Path(tmp_str)
-        extract_dir = tmp_dir / "extracted"
-        extract_dir.mkdir()
+        repacked_path = Path(tmp_str) / "repacked.zip"
 
-        with zipfile.ZipFile(zip_path, "r") as zf:
-            zf.extractall(extract_dir)
+        with zipfile.ZipFile(zip_path, "r") as zf_in:
+            names = zf_in.namelist()
+            top_dirs = {n.split("/", 1)[0] for n in names if "/" in n}
+            root_files = [n for n in names if "/" not in n and n]
 
-        entries = list(extract_dir.iterdir())
-        # 只有單一頂層資料夾時才攤平（避免把原本就在根目錄的多個檔案/資料夾弄亂）
-        if len(entries) == 1 and entries[0].is_dir():
-            top_dir = entries[0]
-            repacked_path = tmp_dir / "repacked.zip"
-            with zipfile.ZipFile(repacked_path, "w", compression=zipfile.ZIP_DEFLATED, allowZip64=True) as zf_out:
-                for root, dirs, files in os.walk(top_dir):
-                    root_path = Path(root)
-                    rel_root = root_path.relative_to(top_dir)
-                    # 保留空目錄
-                    if not dirs and not files and str(rel_root) != ".":
-                        zf_out.writestr(rel_root.as_posix() + "/", "")
-                    for file in files:
-                        full_file = root_path / file
-                        arcname = (rel_root / file).as_posix()
-                        zf_out.write(full_file, arcname)
+            if len(top_dirs) == 1 and not root_files:
+                prefix = next(iter(top_dirs)) + "/"
+                with zipfile.ZipFile(repacked_path, "w", compression=zipfile.ZIP_DEFLATED, allowZip64=True) as zf_out:
+                    for item in zf_in.infolist():
+                        if item.filename == prefix:
+                            continue
+                        new_name = item.filename[len(prefix):] if item.filename.startswith(prefix) else item.filename
+                        if not new_name:
+                            continue
+                        new_info = zipfile.ZipInfo(filename=new_name, date_time=item.date_time)
+                        new_info.compress_type = item.compress_type
+                        new_info.external_attr = item.external_attr
+                        zf_out.writestr(new_info, zf_in.read(item.filename))
 
-            shutil.move(str(repacked_path), str(zip_path))
+                shutil.move(str(repacked_path), str(zip_path))
 
 
 def download_zip(url: str, dest_dir: Path, filename: str, flatten: bool = False):
@@ -137,7 +251,6 @@ def process_repo(repo: str):
         desired_zip = f"{repo}-{safe_tag}.zip"
         print(f"  -> Release: {tag}")
 
-        # 1. 若有上傳 .zip 附件 (Assets)，保留原結構下載
         zip_assets = [
             a for a in rel.get("assets", [])
             if a.get("name", "").lower().endswith(".zip")
@@ -152,7 +265,6 @@ def process_repo(repo: str):
                     flatten=False,
                 )
         elif rel.get("zipball_url"):
-            # 2. 下載 GitHub Source code zipball，命名為 <Repo>-<Tag>.zip 並攤平頂層目錄
             download_zip(
                 rel["zipball_url"],
                 OUTPUT_DIR,
@@ -165,6 +277,7 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     for repo in REPOS:
         process_repo(repo)
+    generate_index_txt(OUTPUT_DIR, INDEX_FILE)
     print(f"\n全部完成！檔案儲存於: {OUTPUT_DIR.resolve()}")
 
 
