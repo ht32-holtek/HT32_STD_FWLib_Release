@@ -25,9 +25,9 @@ INDEX_FILE = OUTPUT_DIR / "index.txt"
 # RAW 網址設定（若這批 zip 會放進某個 Repo 的子資料夾，請填例如 "releases/fwlib"，否則留空 ""）
 RAW_SUBPATH = ""
 GITHUB_REPO = "HT32_STD_FWLib_Release"
-GITEE_REPO = "HT32_STD_FWLib_Release"
+GITEE_REPO = "ht32_std_fwlib_release"
 GITHUB_BRANCH = "main"
-GITEE_BRANCH = "master"
+GITEE_BRANCH = "main"
 
 GITHUB_RAW_BASE = f"https://raw.githubusercontent.com/{OWNER}/{GITHUB_REPO}/{GITHUB_BRANCH}"
 GITEE_RAW_BASE = f"https://gitee.com/{OWNER}/{GITEE_REPO}/raw/{GITEE_BRANCH}"
