@@ -1,57 +1,57 @@
 File: HT32_STD_1xxxx_FWLib-V1.6.2.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_1xxxx_FWLib-V1.6.2.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_1xxxx_FWLib-V1.6.2.zip
-  Size       : 6.97 MB (7,303,986 bytes)
-  SHA256     : 70b30f871a441322720cdfdceb8489a52eb39105cdc355410d910cf2ce4d6b34
+  Size       : 7.00 MB (7,335,584 bytes)
+  SHA256     : 766cbb103b0dc8bb273d70dcd1830e58ea42925b6ef14c472429125dc64a584a
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_1xxxx_FWLib-V1.6.2a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_1xxxx_FWLib-V1.6.2a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_1xxxx_FWLib-V1.6.2a.zip
-  Size       : 6.96 MB (7,302,011 bytes)
-  SHA256     : f738f6a1e67c1a4cc5cd644036dbacc88edcd3186df9ff58cb25e8840689d822
+  Size       : 6.99 MB (7,333,609 bytes)
+  SHA256     : 5047cac471cd0e99acd9f06e0e87ff7bf8d0b078747ac4b4380d80fd55da3f74
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_1xxxx_FWLib-V1.6.2b.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_1xxxx_FWLib-V1.6.2b.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_1xxxx_FWLib-V1.6.2b.zip
-  Size       : 6.96 MB (7,302,023 bytes)
-  SHA256     : f9bb2e23e75327cac34cf88819e58d9ff9d27b508db0131644b75d966c45a23d
+  Size       : 6.99 MB (7,333,621 bytes)
+  SHA256     : 81c96abf38a449de6c895aa91581662b9543c32b519070f82dbc4402f4f884cb
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_1xxxx_FWLib-V1.7.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_1xxxx_FWLib-V1.7.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_1xxxx_FWLib-V1.7.1.zip
-  Size       : 7.09 MB (7,431,954 bytes)
-  SHA256     : 8695215a609889309e9d16fa33d775272aab00f4e57c39f519244dce69f7dbc7
+  Size       : 7.12 MB (7,463,552 bytes)
+  SHA256     : cfc278b667a209454cd6cb2c4182ecbbc8685694280b63eba4e1639c2fb5a7a6
   ReleaseDate: 2026-02-09
 ------------------------------------------------------------
 File: HT32_STD_1xxxx_FWLib-V1.8.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_1xxxx_FWLib-V1.8.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_1xxxx_FWLib-V1.8.1.zip
-  Size       : 19.25 MB (20,181,626 bytes)
-  SHA256     : 8a3ad26243e49be41a6acd9751eb2df90ac9275a6bfd93349b8afe734fcc6f36
+  Size       : 19.28 MB (20,213,224 bytes)
+  SHA256     : 4e6747f900495022966aaff9c7fc9e362b947891e18c51366cad9619df108758
   ReleaseDate: 2026-06-29
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.17.2.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.17.2.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.17.2.zip
-  Size       : 15.50 MB (16,256,805 bytes)
-  SHA256     : 4948bc329e74a89a44515ffbd1c5a1ccc987942fa4e66ad3dc119dc69290478f
+  Size       : 15.56 MB (16,319,997 bytes)
+  SHA256     : d2110701e3019a15da3d0783b7150bc79d5c332b528b3f34c0945e3a53644823
   ReleaseDate: 2025-07-10
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.17.3.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.17.3.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.17.3.zip
-  Size       : 15.63 MB (16,384,079 bytes)
-  SHA256     : 204c4058abf86c40a310527aff41f18d118e4ceb65f8506c1590c5704abf1260
+  Size       : 15.69 MB (16,447,271 bytes)
+  SHA256     : cb5912cbb98d17b045d6267bda2c4a1d9dcf965c50172394b3a5b231bf02b130
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.17.3a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.17.3a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.17.3a.zip
-  Size       : 15.62 MB (16,382,104 bytes)
-  SHA256     : b563edea576cce8be34b50a0062674c819f6d2039c120aa345defc80f272b42f
+  Size       : 15.68 MB (16,445,296 bytes)
+  SHA256     : 1ed660d56cd694d688e31be7b3741b08c22fa4d68aeb7d0d7b5c348f46f9b038
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.18.1.zip
@@ -64,148 +64,148 @@ File: HT32_STD_5xxxx_FWLib-V1.18.1.zip
 File: HT32_STD_5xxxx_FWLib-V1.18.1a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.18.1a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.18.1a.zip
-  Size       : 15.61 MB (16,365,051 bytes)
-  SHA256     : da208fb7daac5767e1f62cf45f1e40468aef78cf99b8204a401758c96d0518e5
+  Size       : 15.67 MB (16,428,025 bytes)
+  SHA256     : ed2733c832651e7d76f33bf9416055806c6c1272e538d3dc08d4cbd9549420e8
   ReleaseDate: 2025-08-29
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.18.1b.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.18.1b.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.18.1b.zip
-  Size       : 15.61 MB (16,365,047 bytes)
-  SHA256     : 917e3603aed3f201b7878fc10d296617b971225eba273e4f30e072f821c1c5b9
+  Size       : 15.67 MB (16,428,021 bytes)
+  SHA256     : 11f1d19fca5c702d2fd25e42eb12dcc5e6997c8d537840228c8c08306dbec2bb
   ReleaseDate: 2025-08-29
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.19.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.19.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.19.1.zip
-  Size       : 15.78 MB (16,547,845 bytes)
-  SHA256     : 394ec6d12e3988d3610a3f23e233c1095b99fbac0a037a60c954a1d175da7274
+  Size       : 15.84 MB (16,611,401 bytes)
+  SHA256     : a74037fccc3727b68e3b35191c936555494a7ab9574ce346f889be027d25c4ed
   ReleaseDate: 2025-11-11
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.19.2.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.19.2.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.19.2.zip
-  Size       : 15.83 MB (16,603,156 bytes)
-  SHA256     : ca00d254532398797598dabacd664c6495c98d178c8912bd874cc83e2f98a6bc
+  Size       : 15.89 MB (16,666,896 bytes)
+  SHA256     : a237de42f202c72570893e0fb272a2708097b5a4577467f968e848ca5866c6e8
   ReleaseDate: 2026-02-10
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.20.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.20.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.20.1.zip
-  Size       : 16.30 MB (17,092,247 bytes)
-  SHA256     : b18448dd7a06b11705a65fb1f0a3ab9a3acf21d7e5707279105fdace565e493a
+  Size       : 16.36 MB (17,157,791 bytes)
+  SHA256     : 2db8be7e32aae2e92d014bf7902ac50471831cdd410afd4dccedac198caa2227
   ReleaseDate: 2026-04-07
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.21.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.21.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.21.1.zip
-  Size       : 16.69 MB (17,497,747 bytes)
-  SHA256     : c9b8c90fc370bdd2b5db4a3f96cb024155ce74f218fb38b4974fce879a4458fe
+  Size       : 16.75 MB (17,563,773 bytes)
+  SHA256     : c89c951935097833c123a71ccfd385f28322d4abccdbe3cdf7c32093b902a4cb
   ReleaseDate: 2026-06-24
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.21.2.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.21.2.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.21.2.zip
-  Size       : 35.59 MB (37,320,653 bytes)
-  SHA256     : b36e33a934fb35812f23ca004bb5c0ec085d40a5f58a9269a95ec9623aa5972d
+  Size       : 35.65 MB (37,386,867 bytes)
+  SHA256     : df996777f9ed6b7583d1b1b6eb50d9db9126cdd9de6cd571eaa32ba6c07ebc62
   ReleaseDate: 2026-09-14
 ------------------------------------------------------------
 File: HT32_STD_5xxxx_FWLib-V1.22.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_5xxxx_FWLib-V1.22.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_5xxxx_FWLib-V1.22.1.zip
-  Size       : 37.14 MB (38,941,019 bytes)
-  SHA256     : 8f50261bb240b8a786d8c15d8903b7cc8b5a89f69fe702b6616dbdf4d3ee3d06
+  Size       : 37.23 MB (39,037,793 bytes)
+  SHA256     : 6ec9b51e38796e30c303350bb7a1a52a7e666c460423337b9eb2b1832d9f1822
   ReleaseDate: 2026-11-03
 ------------------------------------------------------------
 File: HT32_STD_7xxxx_FWLib-V1.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_7xxxx_FWLib-V1.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_7xxxx_FWLib-V1.1.zip
-  Size       : 18.96 MB (19,882,038 bytes)
-  SHA256     : 73c998dafa8a31b32b211921e4b6cb85a738b508c81a506f6e8b3c1793fe088a
+  Size       : 18.99 MB (19,916,590 bytes)
+  SHA256     : 3cd5a3e39f253693e0b25d3c7ebbaa484eeaef1c9f6e9036218a8855f472fb01
   ReleaseDate: 2026-09-24
 ------------------------------------------------------------
 File: HT32_STD_7xxxx_FWLib-V1.2.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_7xxxx_FWLib-V1.2.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_7xxxx_FWLib-V1.2.1.zip
-  Size       : 19.25 MB (20,189,788 bytes)
-  SHA256     : 8c3801ea1a5e9171a90cf2589ba50599a83d4017fc9a0e659f29d88d75aff8f4
+  Size       : 19.29 MB (20,226,286 bytes)
+  SHA256     : f80a5bebb56ab9e717e040a6015365797c2a32e966928633cf99dbae2b03e66e
   ReleaseDate: 2026-11-11
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.2.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.2.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.2.1.zip
-  Size       : 5.04 MB (5,286,401 bytes)
-  SHA256     : aaa4ffd902948becbf7d6196b8245d018edcbc939a9835fad16858790a30ca28
+  Size       : 5.07 MB (5,311,877 bytes)
+  SHA256     : b0625f91f31418ebce1867621ce8ae5af98d5af8a8b64a2ace9984cd0ed2819d
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.2.1a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.2.1a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.2.1a.zip
-  Size       : 5.04 MB (5,284,426 bytes)
-  SHA256     : 29fdd828be84e81e8a988879906fbcb8c26625e6ced03b3e4f5a816bb0148ded
+  Size       : 5.06 MB (5,309,902 bytes)
+  SHA256     : 806d58cf86299ef908b73d57c37b599a726fc628772a8d2434cccdd5c225e6a1
   ReleaseDate: 2025-07-30
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.2.2a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.2.2a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.2.2a.zip
-  Size       : 5.34 MB (5,594,810 bytes)
-  SHA256     : 2bbddcae94fa051ef2cbfdaeb08bc4d86d100fbf2b0b5a4b1bed718c1f1a08da
+  Size       : 5.36 MB (5,621,002 bytes)
+  SHA256     : f069407616eac0d7699afbd83afc24ce1202b7f5b3ef9cefc4e26e8209e5ddaf
   ReleaseDate: 2025-08-07
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.3.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.3.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.3.1.zip
-  Size       : 6.57 MB (6,886,705 bytes)
-  SHA256     : cf3cd71df356b346bb40ba1e440a7dafbc1fa83bb4a83396ba34b8654d6a2d28
+  Size       : 6.60 MB (6,919,489 bytes)
+  SHA256     : 93b998661586da424acbab726ed52374ea0fd4e40e1d24203da5b729a14a81e3
   ReleaseDate: 2025-09-08
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.4.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.4.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.4.1.zip
-  Size       : 6.81 MB (7,144,858 bytes)
-  SHA256     : e81ed3135d07ac4e6359fb273db10a45cd2ff63ac7a5cb1dbc47663f7df896e5
+  Size       : 6.85 MB (7,178,754 bytes)
+  SHA256     : a09357b003935d2c8f587a542e501da2461a5332e92c055b2e1aef31b74baf86
   ReleaseDate: 2025-10-07
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.4.1a.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.4.1a.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.4.1a.zip
-  Size       : 6.81 MB (7,144,854 bytes)
-  SHA256     : 803ca31e2f8496d03b5dee93fb69ae8909b71c96dd469e9ee23b6ce7a90123c3
+  Size       : 6.85 MB (7,178,750 bytes)
+  SHA256     : da5f57caafce052638e74d88a0780bb4cdf18e170753a4d009e27bb5d62681e1
   ReleaseDate: 2025-10-07
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.5.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.5.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.5.1.zip
-  Size       : 6.82 MB (7,146,540 bytes)
-  SHA256     : 250753776e05299a639bb19efe023bafb12dd33adb94b44f642044db9aeff3e7
+  Size       : 6.85 MB (7,180,436 bytes)
+  SHA256     : c9596d4568a2b35df49234825aacadd1b40b8c88b9fb513b0bb603579763b970
   ReleaseDate: 2025-10-23
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.6.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.6.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.6.1.zip
-  Size       : 7.05 MB (7,394,061 bytes)
-  SHA256     : 97b524b70a7d6b119f09f9e114752fd10d9cecd7bad77e7a79f398581155eef0
+  Size       : 7.08 MB (7,427,957 bytes)
+  SHA256     : 3d7ed65734f9686fd95b8c114abdb404b0c9c15b1d42f879ac78d5a54a1c51fb
   ReleaseDate: 2026-05-07
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.7.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.7.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.7.1.zip
-  Size       : 7.68 MB (8,057,734 bytes)
-  SHA256     : ca6fadce2421f53c27ec5a15b7c09e43fad068f839b63cfe63564d409ec6faf7
+  Size       : 7.72 MB (8,092,492 bytes)
+  SHA256     : 77c44d29d74dcdccea1acbddfdfc927365950bc414a11872dc8b460e1bac7b0e
   ReleaseDate: 2026-09-15
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.7.2.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.7.2.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.7.2.zip
-  Size       : 7.70 MB (8,077,967 bytes)
-  SHA256     : bfa9b058c75621acffa074601aa27230e49b7500ea368de2af2750a45e0af2c7
+  Size       : 7.74 MB (8,112,725 bytes)
+  SHA256     : 5d597e8aebe26bc1366546604230f0e4eaca06a04482d9ae0545b9a2328467c8
   ReleaseDate: 2026-10-01
 ------------------------------------------------------------
 File: HT32_STD_L5xxxx_FWLib-V1.8.1.zip
   GitHub RAW : https://raw.githubusercontent.com/ht32-holtek/HT32_STD_FWLib_Release/main/HT32_STD_L5xxxx_FWLib-V1.8.1.zip
   Gitee RAW  : https://gitee.com/ht32-holtek/ht32_std_fwlib_release/raw/main/HT32_STD_L5xxxx_FWLib-V1.8.1.zip
-  Size       : 7.70 MB (8,078,721 bytes)
-  SHA256     : 2ccd156c0ee00f5736a2a65727df825728182e58d1b839a0077bffe1e19b3343
+  Size       : 7.74 MB (8,113,479 bytes)
+  SHA256     : 123a3d4dbd67fe746e581e1a325eb2a79d69868b5a1efade27ba0bdd92bbb8d0
   ReleaseDate: 2026-10-07
 ------------------------------------------------------------
 File: HT32F490x1_FWLib_V1.1.4_146.zip
